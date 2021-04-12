@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "FS312F-G")(type "KiCad")(uri "${KIPRJMOD}/custom-symbols/FS312F-G.kicad_sym")(options "")(descr ""))
+  (lib (name "FS8205A")(type "KiCad")(uri "${KIPRJMOD}/custom-symbols/FS8205A.kicad_sym")(options "")(descr ""))
+  (lib (name "SW_PUSH_SKRPACE010")(type "KiCad")(uri "${KIPRJMOD}/custom-symbols/SW_PUSH_SKRPACE010.kicad_sym")(options "")(descr ""))
+  (lib (name "galion")(type "KiCad")(uri "${KIPRJMOD}/custom-symbols/galion.kicad_sym")(options "")(descr ""))
+)

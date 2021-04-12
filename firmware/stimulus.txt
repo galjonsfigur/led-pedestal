@@ -1,0 +1,65 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: MPLAB X
+## FORMAT:  v2.00.01
+## DEVICE:  PIC10F222
+
+## PINREGACTIONS
+ms
+No Repeat
+--
+&
+## ADVPINREGACTIONS
+--
+&
+--
+COND2
+Any
+
+
+
+0
+cyc
+
+--
+&
+## CLOCK
+&
+## STIMULUSFILE
+&
+## RESPONSEFILE
+&
+## ASYNCH
+Pin
+GP0
+Set Voltage
+500 mV
+Charger ADC
+-1
+--
+Pin
+GP1
+Set Voltage
+2950 mV
+Battery ADC
+-1
+--
+Pin
+GP3
+Set Low
+
+Button
+-1
+--
+Pin
+GP0
+Set High
+
+
+-1
+--
+&
+## ADVANCEDSCL
+
+0
+&

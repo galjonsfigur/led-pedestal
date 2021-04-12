@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/mnt/HGST/Elektronika/LED Pedestal/led-pedestal/led-pedestal.kicad_sch</h1>
+    <p>śro, 24 lut 2021, 11:14:09</p>
+    <p>Eeschema 5.99.0-unknown-r25448-fabafe71</p>
+    <p><b>Component Count:</b>29</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>BT1</td><td>1</td><td>Li-Ion</td><td>Connector:Conn_01x02_Male</td><td>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>C1, C4, C5</td><td>3</td><td>100nF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2, C6</td><td>2</td><td>1uF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C3</td><td>1</td><td>100n</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1</td><td>1</td><td>MBR0520</td><td>Diode:MBR0520</td><td>Diode_SMD:D_SOD-123</td><td>20V 0.5A Schottky Power Rectifier Diode, SOD-123</td><td></td></tr>
+    <tr><td>D2</td><td>1</td><td>RETRO LED</td><td>Device:LED</td><td>LED_THT:LED_D3.0mm_FlatTop</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>USB_B_Micro</td><td>Connector:USB_B_Micro</td><td>Connector_USB:USB_Micro-B_Molex_47346-0001</td><td>USB Micro Type B connector</td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>ISP</td><td>Connector_Generic:Conn_02x04_Counter_Clockwise</td><td>custom-symbols:SOIC_clipProgSmall</td><td>Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>JP1</td><td>1</td><td>Variant select jumper</td><td>Jumper:Jumper_3_Open</td><td>Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm</td><td>Jumper, 3-pole, both open</td><td></td></tr>
+    <tr><td>LG1</td><td>1</td><td>Galion_Logo</td><td>galion:Galion_Logo</td><td>custom-symbols:Galion_Logo_Small</td><td></td><td></td></tr>
+    <tr><td>LG2</td><td>1</td><td>Logo_Open_Hardware_Small</td><td>Graphic:Logo_Open_Hardware_Small</td><td>Symbol:OSHW-Symbol_6.7x6mm_SilkScreen</td><td>Open Hardware logo, small</td><td></td></tr>
+    <tr><td>Q1</td><td>1</td><td>AO3401A</td><td>Transistor_FET:AO3401A</td><td>Package_TO_SOT_SMD:SOT-23</td><td>-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23</td><td></td></tr>
+    <tr><td>R1, R7</td><td>2</td><td>10k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2</td><td>1</td><td>100</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3</td><td>1</td><td>1k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R4</td><td>1</td><td>330k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R5</td><td>1</td><td>56</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>R6</td><td>1</td><td>470</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Resistor</td><td></td></tr>
+    <tr><td>SW1</td><td>1</td><td>SKRPACE010</td><td>SW_PUSH_SKRPACE010:SW_Push_SKRPACE010</td><td>custom-symbols:SKRPACE010</td><td>Push button switch, generic, two pins</td><td></td></tr>
+    <tr><td>TH1</td><td>1</td><td>10k</td><td>Device:Thermistor</td><td>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</td><td>Temperature dependent resistor</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>LTC4054ES5-4.2</td><td>Battery_Management:LTC4054ES5-4.2</td><td>Package_TO_SOT_SMD:TSOT-23-5</td><td>Constant-current/constant-voltage linear charger for single cell lithium-ion batteries with 2.9V Trickle Charge, 4.5V to 6.5V VDD, -40 to +85 degree Celcius, TSOT-23-5</td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>FS8205A</td><td>FS8205A:FS8205A</td><td>Package_SO:TSSOP-8_4.4x3mm_P0.65mm</td><td>Dual N-Channel Enhancement Mode Power MOSFET</td><td></td></tr>
+    <tr><td>U3</td><td>1</td><td>FS312F-G</td><td>FS312F-G:FS312F-G</td><td>Package_TO_SOT_SMD:SOT-23-6</td><td>One Cell Lithium-ion/Polymer Battery Protection</td><td></td></tr>
+    <tr><td>U4</td><td>1</td><td>XC6206PxxxMR</td><td>Regulator_Linear:XC6206PxxxMR</td><td>Package_TO_SOT_SMD:SOT-23</td><td>Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23</td><td></td></tr>
+    <tr><td>U5</td><td>1</td><td>PIC10F222-IOT</td><td>MCU_Microchip_PIC10:PIC10F222-IOT</td><td>Package_TO_SOT_SMD:SOT-23-6</td><td>512W Flash, 24B SRAM, SOT-23-6</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

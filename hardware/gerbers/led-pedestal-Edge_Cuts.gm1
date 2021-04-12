@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,5.99.0-unknown-r24460-8dd23acc*%
+%TF.CreationDate,2021-01-20T14:34:26+01:00*%
+%TF.ProjectId,led-pedestal,6c65642d-7065-4646-9573-74616c2e6b69,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.99.0-unknown-r24460-8dd23acc) date 2021-01-20 14:34:26*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X159955000Y-94742000D02*
+G75*
+G03*
+X159955000Y-94742000I-12000000J0D01*
+G01*
+M02*
