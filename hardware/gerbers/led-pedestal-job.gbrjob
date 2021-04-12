@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "5.99.0-unknown-r24460-8dd23acc"
+      "Version": "5.99.0-1.20210313gitc119790.fc32"
     },
-    "CreationDate": "2021-01-20T14:34:26+01:00"
+    "CreationDate": "2021-04-11T18:30:14+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "led-pedestal",
       "GUID": "6c65642d-7065-4646-9573-74616c2e6b69",
-      "Revision": "rev?"
+      "Revision": "2"
     },
     "Size": {
       "X": 24.1,
@@ -24,8 +24,8 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.0,
-      "PadToTrack": 0.0,
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.25,
       "TrackToRegion": 0.254,
