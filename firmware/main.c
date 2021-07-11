@@ -186,11 +186,8 @@ void initIO() {
     /* Select only GP2 as output and set it to low */
     GP2 = 0;
     TRISGPIO = 0x0B;
-    /* Set ADC channel to be able to select from GP0 and GP1 */
-    ADCON0bits.CHS1 = 0;
-    /* Configure GP0 and GP1 as digital pins */
-    ADCON0bits.ANS0 = 0;
-    ADCON0bits.ANS1 = 0;
+    /* Preconfigure ADC to use GP0 and GP1 but set them as digital pins */
+    ADCON0 = 0x00;
 }
 
 /* Use timer to get ~32 ms delay on 4MHz oscillator and 1:256 prescaler */
@@ -204,17 +201,17 @@ void delay_tmr(uint8_t tmr_cycles) {
     while (TMR0 != tmr_cycles);
 }
 
-void blink(uint8_t time) {    
+void blink(uint8_t time) {
     GPIObits.GP2 = 1;
+    blink_wait:
     for(scratch.temp_8[0] = time; scratch.temp_8[0] > 0; scratch.temp_8[0]--) {
         TMR0 = 0;
         while(!(TMR0&0x80)) __asm("clrwdt");
     }
+    if (!GPIObits.GP2)
+        return;
     GPIObits.GP2 = 0;
-    for(scratch.temp_8[0] = time; scratch.temp_8[0] > 0; scratch.temp_8[0]--) {
-        TMR0 = 0;
-        while(!(TMR0&0x80)) __asm("clrwdt");
-    }
+    goto blink_wait;
 }
 
 void show_charging_status() {
@@ -227,11 +224,11 @@ void show_charging_status() {
     ADCON0bits.GO = 1;
     while (ADCON0bits.nDONE);
     if (ADRES > 20) {
-            blink(20);
-            blink(20);
+            blink(25);
+            blink(25);
     } else {
-            blink(10);
-            blink(10);
+            blink(15);
+            blink(15);
     }
     /* Turn off ADC and disconnect the pin */
     ADCON0bits.ADON = 0;
@@ -252,13 +249,12 @@ void show_battery_status() {
     if (ADRES < 155) {
         blink(5);
     } else {
-        /* Calculate ADC result to amount of blinks */
-        /* XXX: too little ROM to pack some battery levels */
+        /* Convert ADC result to amount of blinks */
         i = 1;
         if (ADRES > 200) i = 2;
-        /* if (ADRES > 211) i = 3; */ 
+        if (ADRES > 211) i = 3;
         if (ADRES > 219) i = 4;
-        /* if (ADRES > 222) i = 4; */
+        if (ADRES > 222) i = 5;
         if (ADRES > 229) i = 6;
         for (; i > 0; i--) {
             blink(10);
@@ -267,7 +263,7 @@ void show_battery_status() {
 
     /* Turn off ADC */
     ADCON0bits.ADON = 0;
-    ADCON0bits.ANS1 = 1;
+    ADCON0bits.ANS1 = 0;
 }
 
 /* Changing of the mode will be happening as long as the button is pressed */
