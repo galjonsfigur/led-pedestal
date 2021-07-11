@@ -59,6 +59,7 @@
         "clearance|148278800|103332000|02ff189e-09d4-4792-a642-5c2635484744|7a53236e-ff73-4b75-92aa-4f7d573de335",
         "clearance|148778800|103882000|070addd4-d6fa-4caf-8393-76c5c75255dc|7a53236e-ff73-4b75-92aa-4f7d573de335",
         "courtyards_overlap|149950000|102382000|4a814e0b-f798-4587-9668-bf895edc1db9|6b6e94de-a4a3-4340-87a0-041591a0498d",
+        "courtyards_overlap|150178799|102783999|4a814e0b-f798-4587-9668-bf895edc1db9|6b6e94de-a4a3-4340-87a0-041591a0498d",
         "courtyards_overlap|150178800|102382000|4a814e0b-f798-4587-9668-bf895edc1db9|6b6e94de-a4a3-4340-87a0-041591a0498d"
       ],
       "meta": {
@@ -117,7 +118,8 @@
         "min_track_width": 0.18,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_annulus": 0.049999999999999996,
-        "min_via_diameter": 0.39999999999999997
+        "min_via_diameter": 0.39999999999999997,
+        "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
@@ -374,7 +376,7 @@
       }
     ],
     "meta": {
-      "version": 0
+      "version": 1
     },
     "net_colors": null
   },
@@ -413,6 +415,13 @@
       "version": 0
     },
     "net_format_name": "",
+    "ngspice": {
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
@@ -422,7 +431,7 @@
   },
   "sheets": [
     [
-      "a856af36-292b-4efd-aff8-f2fe8b6a3041",
+      "ae1fc2ad-2f1c-4445-a1f7-044bc0396092",
       ""
     ]
   ],
